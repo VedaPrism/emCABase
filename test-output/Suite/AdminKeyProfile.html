@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>TestNG:  AdminKeyProfile</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AdminKeyProfile</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 07 15:37:44 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>121 seconds (121856 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>SMK </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Scripts.Login_Script.Login()'><b>Login</b><br>Test class: Scripts.Login_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=sindhuadmin6@gmail.com, Script_Name=ValidLoginAdmin, TC_ID=t001, Expected_Result=Valid credentials, Pwd=emudhra@2, Actual Result=null}</td>
+<td></td>
+<td>4</td>
+<td>Scripts.Login_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.Login_Script.Login()'><b>Login</b><br>Test class: Scripts.Login_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=sindhuofficer1@gmail.com, Script_Name=ValidLoginOfficer, TC_ID=t002, Expected_Result=Valid credentials, Pwd=emudhra@2, Actual Result=null}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.Login_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.Login_Script.Login()'><b>Login</b><br>Test class: Scripts.Login_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=sindhuauditor1@gmail.com, Script_Name=ValidLoginAuditor, TC_ID=t003, Expected_Result=Valid credentials, Pwd=emudhra@2, Actual Result=null}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.Login_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.Login_Script.Login()'><b>Login</b><br>Test class: Scripts.Login_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=sindhuoperator1@gmail.com, Script_Name=ValidLoginOperator, TC_ID=t004, Expected_Result=Valid credentials, Pwd=emudhra@2, Actual Result=null}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.Login_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.AdmnKeyPrfle_Script.keyProfile()'><b>keyProfile</b><br>Test class: Scripts.AdmnKeyPrfle_Script</td>
+<td></td>
+<td>2</td>
+<td>Scripts.AdmnKeyPrfle_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnKeyPrfle_Script.keyProfileExprtExcel()'><b>keyProfileExprtExcel</b><br>Test class: Scripts.AdmnKeyPrfle_Script</td>
+<td></td>
+<td>4</td>
+<td>Scripts.AdmnKeyPrfle_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnKeyPrfle_Script.keyProfileHSM()'><b>keyProfileHSM</b><br>Test class: Scripts.AdmnKeyPrfle_Script<br>Parameters: {Order=1, Profile_Type=HSM, Execute_Flag=Y, Uname=sindhuadmin@gmail.com, HSMPassword=eMudhra@2, Authentic_tPswrd=emudhra@2, Profile_Name=sindhuHSMab, Authentic_email=sindhuadmin6@gmail.com, Script_Name=keyProfileHSM, TC_ID=t001, Expected_Result=NA, Pwd=emudhra@1, Actual Result=null}</td>
+<td></td>
+<td>47</td>
+<td>Scripts.AdmnKeyPrfle_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnKeyPrfle_Script.keyProfilehrdTkn()'><b>keyProfilehrdTkn</b><br>Test class: Scripts.AdmnKeyPrfle_Script<br>Parameters: {Order=1, Profile_Type=Hard Token, Execute_Flag=Y, Uname=sindhuadmin@gmail.com, HSMPassword=NA, Authentic_tPswrd=NA, Profile_Name=sindhuHrdToken, Authentic_email=NA, Script_Name=prflenameErrCheck, TC_ID=t001, Expected_Result=Please enter profile name, Pwd=emudhra@1, Actual Result=Please Enter Profile Name}</td>
+<td></td>
+<td>8</td>
+<td>Scripts.AdmnKeyPrfle_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnKeyPrfle_Script.keyProfilehrdTkn()'><b>keyProfilehrdTkn</b><br>Test class: Scripts.AdmnKeyPrfle_Script<br>Parameters: {Order=1, Profile_Type=Hard Token, Execute_Flag=Y, Uname=sindhuadmin@gmail.com, HSMPassword=NA, Authentic_tPswrd=NA, Profile_Name=sindhuHrdToken, Authentic_email=NA, Script_Name=prfleTypeErrCheck, TC_ID=t001, Expected_Result=Please choose profile type, Pwd=emudhra@1, Actual Result=Please Choose Profile Type}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.AdmnKeyPrfle_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnKeyPrfle_Script.keyProfilehrdTkn()'><b>keyProfilehrdTkn</b><br>Test class: Scripts.AdmnKeyPrfle_Script<br>Parameters: {Order=1, Profile_Type=Hard Token, Execute_Flag=Y, Uname=sindhuadmin@gmail.com, HSMPassword=NA, Authentic_tPswrd=NA, Profile_Name=sindhuHrdToken, Authentic_email=NA, Script_Name=uploadFileErrCheck, TC_ID=t001, Expected_Result=Please upload a PKCS#11 configuration file, Pwd=emudhra@1, Actual Result=Please Upload A PKCS#11 Configuration File}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.AdmnKeyPrfle_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnKeyPrfle_Script.keyProfilehrdTkn()'><b>keyProfilehrdTkn</b><br>Test class: Scripts.AdmnKeyPrfle_Script<br>Parameters: {Order=1, Profile_Type=Hard Token, Execute_Flag=Y, Uname=sindhuadmin@gmail.com, HSMPassword=NA, Authentic_tPswrd=emudhra@2, Profile_Name=sindhu2HrdToken, Authentic_email=sindhuadmin6@gmail.com, Script_Name=keyProfileHardToken, TC_ID=t001, Expected_Result=NA, Pwd=emudhra@1, Actual Result=null}</td>
+<td></td>
+<td>45</td>
+<td>Scripts.AdmnKeyPrfle_Script@51b279c9</td></tr>
+</table><p>
+</body>
+</html>

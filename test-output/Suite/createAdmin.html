@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>TestNG:  createAdmin</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>createAdmin</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 07 10:59:23 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>155 seconds (155840 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>SMK </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Scripts.LoginCAAdmin_Script.Login()'><b>Login</b><br>Test class: Scripts.LoginCAAdmin_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=NA, Script_Name=LoginWithoutEmail, TC_ID=t001, Expected_Result=Please enter email, Pwd=NA, Actual Result=Please Enter Email}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.LoginCAAdmin_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.LoginCAAdmin_Script.Login()'><b>Login</b><br>Test class: Scripts.LoginCAAdmin_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=NA, Script_Name=LoginWithoutPIN, TC_ID=t002, Expected_Result=Please enter token PIN, Pwd=NA, Actual Result=Please Enter Token PIN}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.LoginCAAdmin_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.LoginCAAdmin_Script.Login()'><b>Login</b><br>Test class: Scripts.LoginCAAdmin_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=cadmin@emudhra.com, Script_Name=LoginWithInvalidEmail, TC_ID=t003, Expected_Result=Couldn't not find your account, Pwd=123, Actual Result=Couldn't Not Find Your Account}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.LoginCAAdmin_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.LoginCAAdmin_Script.Login()'><b>Login</b><br>Test class: Scripts.LoginCAAdmin_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=caadministrator@emudhra.com, Script_Name=LoginWithInvalidPIN, TC_ID=t004, Expected_Result=Please enter valid token PIN, Pwd=123, Actual Result=Please Enter Valid Token PIN}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.LoginCAAdmin_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.LoginCAAdmin_Script.Login()'><b>Login</b><br>Test class: Scripts.LoginCAAdmin_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=caadministrator@emudhra.com, Script_Name=ValidLoginAdmin, TC_ID=t005, Expected_Result=Valid credentials, Pwd=emudhra@2, Actual Result=null}</td>
+<td></td>
+<td>4</td>
+<td>Scripts.LoginCAAdmin_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.CreateAdmin_Script.crteAdmin()'><b>crteAdmin</b><br>Test class: Scripts.CreateAdmin_Script<br>Parameters: {Zip=567445.0, Execute_Flag=Y, Uname=caadministrator@emudhra.com, Email=sindhuadmin6@gmail.com, city=bangalore, IssuerToken_Pswd=emudhra@2, Select_Group=GRP_002, Token_password=emudhra@2, Script_Name=createAdmin, Common_name=sinAdmin2, TC_ID=t001, Expected_Result=NA, Sign_algorithm=SHA1WithRSA, Pwd=emudhra@2, Tel_no=9.878978678E9, Order=1, Org_Name=emudhra, Authentic_tPswrd=emudhra@2, Validity_Days=365, Validity_sec=10, KeyAlgorithmSize=RSA-1024, Validity_min=30, Validity_hours=12, Role=NA, Authentic_email=caadministrator@emudhra.com, State=Karnataka, Country=India, Actual Result=null}</td>
+<td></td>
+<td>43</td>
+<td>Scripts.CreateAdmin_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.CreateAdmin_Script.crteAdmin()'><b>crteAdmin</b><br>Test class: Scripts.CreateAdmin_Script<br>Parameters: {Zip=12.0, Execute_Flag=Y, Uname=caadministrator@emudhra.com, Email=1.0, city=a, IssuerToken_Pswd=emudhra@2, Select_Group=GRP_002, Token_password=emudhra@2, Script_Name=createAdminInvalidCheck, Common_name=1.0, TC_ID=t002, Expected_Result=NA, Sign_algorithm=SHA1WithRSA, Pwd=emudhra@2, Tel_no=1.0, Order=1, Org_Name=1.0, Authentic_tPswrd=NA, Validity_Days=365111111, Validity_sec=10, KeyAlgorithmSize=RSA-1024, Validity_min=30, Validity_hours=12, Role=NA, Authentic_email=NA, State=a, Country=a, Actual Result=null}</td>
+<td></td>
+<td>22</td>
+<td>Scripts.CreateAdmin_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.CreateAdmin_Script.crteAdmin()'><b>crteAdmin</b><br>Test class: Scripts.CreateAdmin_Script<br>Parameters: {Zip=567445.0, Execute_Flag=Y, Uname=caadministrator@emudhra.com, Email=sindhuadmin4@gmail.com, city=bangalore, IssuerToken_Pswd=emudhra@2, Select_Group=GRP_002, Token_password=emudhra@2, Script_Name=createAdminDeleteCheck, Common_name=sindhuDeletea, TC_ID=t003, Expected_Result=NA, Sign_algorithm=SHA1WithRSA, Pwd=emudhra@2, Tel_no=9.878978678E9, Order=1, Org_Name=emudhra, Authentic_tPswrd=emudhra@2, Validity_Days=365, Validity_sec=10, KeyAlgorithmSize=RSA-1024, Validity_min=30, Validity_hours=12, Role=NA, Authentic_email=caadministrator@emudhra.com, State=Karnataka, Country=India, Actual Result=null}</td>
+<td></td>
+<td>71</td>
+<td>Scripts.CreateAdmin_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.CreateAdmin_Script.roleMngnt()'><b>roleMngnt</b><br>Test class: Scripts.CreateAdmin_Script</td>
+<td></td>
+<td>5</td>
+<td>Scripts.CreateAdmin_Script@51b279c9</td></tr>
+</table><p>
+</body>
+</html>

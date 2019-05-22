@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>TestNG:  CertProfileOCSP</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CertProfileOCSP</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Apr 09 10:35:34 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>74 seconds (74831 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>SMK </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Scripts.Login_Script.Login()'><b>Login</b><br>Test class: Scripts.Login_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=sindhuadmin1@gmail.com, Script_Name=ValidLoginAdmin, TC_ID=t001, Expected_Result=Valid credentials, Pwd=emudhra@2, Actual Result=null}</td>
+<td></td>
+<td>4</td>
+<td>Scripts.Login_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.Login_Script.Login()'><b>Login</b><br>Test class: Scripts.Login_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=sindhuofficer1@gmail.com, Script_Name=ValidLoginOfficer, TC_ID=t002, Expected_Result=Valid credentials, Pwd=emudhra@2, Actual Result=null}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.Login_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.Login_Script.Login()'><b>Login</b><br>Test class: Scripts.Login_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=sindhuauditor1@gmail.com, Script_Name=ValidLoginAuditor, TC_ID=t003, Expected_Result=Valid credentials, Pwd=emudhra@2, Actual Result=null}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.Login_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.Login_Script.Login()'><b>Login</b><br>Test class: Scripts.Login_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=sindhuoperator1@gmail.com, Script_Name=ValidLoginOperator, TC_ID=t004, Expected_Result=Valid credentials, Pwd=emudhra@2, Actual Result=null}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.Login_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.AdmnCertifctPrfleOCSP_Script.certificateProfileOCSP()'><b>certificateProfileOCSP</b><br>Test class: Scripts.AdmnCertifctPrfleOCSP_Script<br>Parameters: {Order=1, Profile_Type=Root, Execute_Flag=Y, Uname=sindhuadmin1@gmail.com, Authentic_tPswrd=emudhra@2, Validity_Days=100, Sign_Algo=SHA1WithRSA, Validity_sec=10, Validity_min=30, Profile_Name=sindhuRoot, Validity_hours=12, Subject_OID=2.4.5, Authentic_email=sindhuadmin1@gmail.com, Script_Name=prfleNameErrCheck, TC_ID=t001, Expected_Result=Please enter profile name, Pwd=emudhra@1, Issuing_CA=Self-Signed, Actual Result=Please Enter Profile Name}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.AdmnCertifctPrfleOCSP_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnCertifctPrfleOCSP_Script.certificateProfileOCSP()'><b>certificateProfileOCSP</b><br>Test class: Scripts.AdmnCertifctPrfleOCSP_Script<br>Parameters: {Order=1, Profile_Type=CA, Execute_Flag=Y, Uname=sindhuadmin1@gmail.com, Authentic_tPswrd=emudhra@2, Validity_Days=300, Sign_Algo=SHA1WithRSA, Validity_sec=10, Validity_min=30, Profile_Name=sindhuCA, Validity_hours=12, Subject_OID=2.4.5, Authentic_email=sindhuadmin1@gmail.com, Script_Name=validityErrCheck, TC_ID=t002, Expected_Result=Please enter valid validity, Pwd=emudhra@1, Issuing_CA=Self-Signed, Actual Result=Please Enter Valid Validity}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.AdmnCertifctPrfleOCSP_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnCertifctPrfleOCSP_Script.certificateProfileOCSP()'><b>certificateProfileOCSP</b><br>Test class: Scripts.AdmnCertifctPrfleOCSP_Script<br>Parameters: {Order=1, Profile_Type=NA, Execute_Flag=Y, Uname=sindhuadmin1@gmail.com, Authentic_tPswrd=emudhra@2, Validity_Days=NA, Sign_Algo=NA, Validity_sec=NA, Validity_min=NA, Profile_Name=sindhuCA, Validity_hours=NA, Subject_OID=NA, Authentic_email=sindhuadmin1@gmail.com, Script_Name=issuingCAErrCheck, TC_ID=t002, Expected_Result=Please choose issuing CA, Pwd=emudhra@1, Issuing_CA=NA, Actual Result=Please Choose Issuing CA}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.AdmnCertifctPrfleOCSP_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnCertifctPrfleOCSP_Script.certificateProfileOCSP()'><b>certificateProfileOCSP</b><br>Test class: Scripts.AdmnCertifctPrfleOCSP_Script<br>Parameters: {Order=1, Profile_Type=CA, Execute_Flag=Y, Uname=sindhuadmin1@gmail.com, Authentic_tPswrd=emudhra@2, Validity_Days=298, Sign_Algo=SHA1WithRSA, Validity_sec=10, Validity_min=30, Profile_Name=sinCACert, Validity_hours=12, Subject_OID=2.4.5, Authentic_email=sindhuadmin1@gmail.com, Script_Name=signalgoErrCheck, TC_ID=t003, Expected_Result=Please choose signature algorithm, Pwd=emudhra@1, Issuing_CA=skRootCert, Actual Result=Please Choose Signature Algorithm}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.AdmnCertifctPrfleOCSP_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnCertifctPrfleOCSP_Script.certificateProfileOCSP()'><b>certificateProfileOCSP</b><br>Test class: Scripts.AdmnCertifctPrfleOCSP_Script<br>Parameters: {Order=1, Profile_Type=User, Execute_Flag=Y, Uname=sindhuadmin1@gmail.com, Authentic_tPswrd=emudhra@2, Validity_Days=250, Sign_Algo=SHA1WithRSA, Validity_sec=10, Validity_min=30, Profile_Name=sinuser1, Validity_hours=12, Subject_OID=2.4.5, Authentic_email=sindhuadmin1@gmail.com, Script_Name=keyUsageErrCheck, TC_ID=t004, Expected_Result=Please choose atleast one key usage, Pwd=emudhra@1, Issuing_CA=sinCACertificate2, Actual Result=Please Choose Atleast One Key Usage}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.AdmnCertifctPrfleOCSP_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnCertifctPrfleOCSP_Script.certificateProfileOCSP()'><b>certificateProfileOCSP</b><br>Test class: Scripts.AdmnCertifctPrfleOCSP_Script<br>Parameters: {Order=1, Profile_Type=OCSP, Execute_Flag=Y, Uname=sindhuadmin1@gmail.com, Authentic_tPswrd=emudhra@2, Validity_Days=240, Sign_Algo=SHA1WithRSA, Validity_sec=10, Validity_min=30, Profile_Name=sinocsp1, Validity_hours=12, Subject_OID=2.4.5, Authentic_email=sindhuadmin1@gmail.com, Script_Name=EnhnceKeyUsageErrCheck, TC_ID=t005, Expected_Result=Please choose atleast one enhanced key usage, Pwd=emudhra@1, Issuing_CA=sinCACertificate2, Actual Result=Please Choose Atleast One Enhanced Key Usage}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.AdmnCertifctPrfleOCSP_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnCertifctPrfleOCSP_Script.certificateProfileOCSP()'><b>certificateProfileOCSP</b><br>Test class: Scripts.AdmnCertifctPrfleOCSP_Script<br>Parameters: {Order=1, Profile_Type=Root, Execute_Flag=Y, Uname=sindhuadmin1@gmail.com, Authentic_tPswrd=emudhra@2, Validity_Days=100, Sign_Algo=SHA1WithRSA, Validity_sec=10, Validity_min=30, Profile_Name=sindhuRoot, Validity_hours=12, Subject_OID=2.4.5, Authentic_email=sindhuadmin1@gmail.com, Script_Name=certPrfleRoot, TC_ID=t001, Expected_Result=NA, Pwd=emudhra@1, Issuing_CA=Self-Signed, Actual Result=null}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.AdmnCertifctPrfleOCSP_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnCertifctPrfleOCSP_Script.certificateProfileOCSP()'><b>certificateProfileOCSP</b><br>Test class: Scripts.AdmnCertifctPrfleOCSP_Script<br>Parameters: {Order=1, Profile_Type=CA, Execute_Flag=Y, Uname=sindhuadmin1@gmail.com, Authentic_tPswrd=emudhra@2, Validity_Days=300, Sign_Algo=SHA1WithRSA, Validity_sec=10, Validity_min=30, Profile_Name=sindhuCA, Validity_hours=12, Subject_OID=2.4.5, Authentic_email=sindhuadmin1@gmail.com, Script_Name=certPrfleCA, TC_ID=t002, Expected_Result=NA, Pwd=emudhra@1, Issuing_CA=Self-Signed, Actual Result=null}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.AdmnCertifctPrfleOCSP_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnCertifctPrfleOCSP_Script.certificateProfileOCSP()'><b>certificateProfileOCSP</b><br>Test class: Scripts.AdmnCertifctPrfleOCSP_Script<br>Parameters: {Order=1, Profile_Type=NA, Execute_Flag=Y, Uname=sindhuadmin1@gmail.com, Authentic_tPswrd=emudhra@2, Validity_Days=NA, Sign_Algo=NA, Validity_sec=NA, Validity_min=NA, Profile_Name=sindhuCA, Validity_hours=NA, Subject_OID=NA, Authentic_email=sindhuadmin1@gmail.com, Script_Name=searchcertPrfleCA, TC_ID=t002, Expected_Result=NA, Pwd=emudhra@1, Issuing_CA=NA, Actual Result=null}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.AdmnCertifctPrfleOCSP_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnCertifctPrfleOCSP_Script.certificateProfileOCSP()'><b>certificateProfileOCSP</b><br>Test class: Scripts.AdmnCertifctPrfleOCSP_Script<br>Parameters: {Order=1, Profile_Type=CA, Execute_Flag=Y, Uname=sindhuadmin1@gmail.com, Authentic_tPswrd=emudhra@2, Validity_Days=298, Sign_Algo=SHA1WithRSA, Validity_sec=10, Validity_min=30, Profile_Name=sinCACert, Validity_hours=12, Subject_OID=2.4.5, Authentic_email=sindhuadmin1@gmail.com, Script_Name=certPrfleCARoot, TC_ID=t003, Expected_Result=NA, Pwd=emudhra@1, Issuing_CA=skRootCert, Actual Result=null}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.AdmnCertifctPrfleOCSP_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnCertifctPrfleOCSP_Script.certificateProfileOCSP()'><b>certificateProfileOCSP</b><br>Test class: Scripts.AdmnCertifctPrfleOCSP_Script<br>Parameters: {Order=1, Profile_Type=User, Execute_Flag=Y, Uname=sindhuadmin1@gmail.com, Authentic_tPswrd=emudhra@2, Validity_Days=250, Sign_Algo=SHA1WithRSA, Validity_sec=10, Validity_min=30, Profile_Name=sinuser1, Validity_hours=12, Subject_OID=2.4.5, Authentic_email=sindhuadmin1@gmail.com, Script_Name=certPrfleUser, TC_ID=t004, Expected_Result=NA, Pwd=emudhra@1, Issuing_CA=sinCACertificate2, Actual Result=null}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.AdmnCertifctPrfleOCSP_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnCertifctPrfleOCSP_Script.certificateProfileOCSP()'><b>certificateProfileOCSP</b><br>Test class: Scripts.AdmnCertifctPrfleOCSP_Script<br>Parameters: {Order=1, Profile_Type=OCSP, Execute_Flag=Y, Uname=sindhuadmin1@gmail.com, Authentic_tPswrd=emudhra@2, Validity_Days=240, Sign_Algo=SHA1WithRSA, Validity_sec=10, Validity_min=30, Profile_Name=sinocsp1, Validity_hours=12, Subject_OID=2.4.5, Authentic_email=sindhuadmin1@gmail.com, Script_Name=certPrfleOCSP, TC_ID=t005, Expected_Result=NA, Pwd=emudhra@1, Issuing_CA=sinCACertificate2, Actual Result=null}</td>
+<td></td>
+<td>58</td>
+<td>Scripts.AdmnCertifctPrfleOCSP_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnCertifctPrfleOCSP_Script.exprtToExl()'><b>exprtToExl</b><br>Test class: Scripts.AdmnCertifctPrfleOCSP_Script</td>
+<td></td>
+<td>2</td>
+<td>Scripts.AdmnCertifctPrfleOCSP_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.AdmnCertifctPrfleOCSP_Script.prfleManagment()'><b>prfleManagment</b><br>Test class: Scripts.AdmnCertifctPrfleOCSP_Script</td>
+<td></td>
+<td>2</td>
+<td>Scripts.AdmnCertifctPrfleOCSP_Script@51b279c9</td></tr>
+</table><p>
+</body>
+</html>

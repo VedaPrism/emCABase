@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>TestNG:  CertCA</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CertCA</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 07 17:13:58 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>56 seconds (56261 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>SMK </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Scripts.LoginOfficer_Script.Login()'><b>Login</b><br>Test class: Scripts.LoginOfficer_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=sindhuadmin6@gmail.com, Script_Name=ValidLoginAdmin, TC_ID=t001, Expected_Result=Valid credentials, Pwd=emudhra@2, Actual Result=null}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.LoginOfficer_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.LoginOfficer_Script.Login()'><b>Login</b><br>Test class: Scripts.LoginOfficer_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=sindhuofficer2@gmail.com, Script_Name=ValidLoginOfficer, TC_ID=t002, Expected_Result=Valid credentials, Pwd=emudhra@2, Actual Result=null}</td>
+<td></td>
+<td>4</td>
+<td>Scripts.LoginOfficer_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.LoginOfficer_Script.Login()'><b>Login</b><br>Test class: Scripts.LoginOfficer_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=sindhuauditor1@gmail.com, Script_Name=ValidLoginAuditor, TC_ID=t003, Expected_Result=Valid credentials, Pwd=emudhra@2, Actual Result=null}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.LoginOfficer_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.LoginOfficer_Script.Login()'><b>Login</b><br>Test class: Scripts.LoginOfficer_Script<br>Parameters: {Order=1, Execute_Flag=Y, Uname=sindhuoperator1@gmail.com, Script_Name=ValidLoginOperator, TC_ID=t004, Expected_Result=Valid credentials, Pwd=emudhra@2, Actual Result=null}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.LoginOfficer_Script@133e16fd</td></tr>
+<tr>
+<td title='Scripts.OfcrCACertEnrollCA_Script.caCertMangmt()'><b>caCertMangmt</b><br>Test class: Scripts.OfcrCACertEnrollCA_Script</td>
+<td></td>
+<td>3</td>
+<td>Scripts.OfcrCACertEnrollCA_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.OfcrCACertEnrollCA_Script.caEnrollCACert()'><b>caEnrollCACert</b><br>Test class: Scripts.OfcrCACertEnrollCA_Script<br>Parameters: {Execute_Flag=Y, Uname=sindhuadmin@gmail.com, Common_Name=skRootCert, Cert_Profile=sindhuRoot, pseudonym=tes, Script_Name=InternalEnroll, Serial_Num=12345.0, TC_ID=t001, Expected_Result=NA, House_identifier=test, Street=Bng, Pwd=emudhra@1, Order=1, Key_Profile=sindhuHSMab, Tel_Num=9.87654321E9, SearchForMsg=NA, Organisation=emudhra, Authentic_tPswrd=emudhra@2, Org_unit=Bnglre, Title=Engineer, 2.4.5=test, SearchByMsg=NA, Select_Type=Internal, Authentic_email=sindhuofficer2@gmail.com, State=karnataka, Country=India, KeyAlgo_size=RSA-1024, Unique_Identifier=fjdsk, Actual Result=null, Postl_Code=567447, Sign_algo=NA}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.OfcrCACertEnrollCA_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.OfcrCACertEnrollCA_Script.caEnrollCACert()'><b>caEnrollCACert</b><br>Test class: Scripts.OfcrCACertEnrollCA_Script<br>Parameters: {Execute_Flag=Y, Uname=sindhuadmin@gmail.com, Common_Name=sinCSRCert, Cert_Profile=NA, pseudonym=tes, Script_Name=CSREnroll, Serial_Num=12345.0, TC_ID=t002, Expected_Result=NA, House_identifier=test, Street=Bng, Pwd=emudhra@1, Order=1, Key_Profile=sindhuHSMab, Tel_Num=9.87654321E9, SearchForMsg=NA, Organisation=emudhra, Authentic_tPswrd=emudhra@2, Org_unit=Bnglre, Title=Engineer, 2.4.5=NA, SearchByMsg=NA, Select_Type=CSR, Authentic_email=sindhuofficer2@gmail.com, State=karnataka, Country=India, KeyAlgo_size=RSA-1024, Unique_Identifier=fjdsk, Actual Result=null, Postl_Code=567447, Sign_algo=SHA256WithRSA}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.OfcrCACertEnrollCA_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.OfcrCACertEnrollCA_Script.caEnrollCACert()'><b>caEnrollCACert</b><br>Test class: Scripts.OfcrCACertEnrollCA_Script<br>Parameters: {Execute_Flag=Y, Uname=sindhuadmin@gmail.com, Common_Name=sinCACertificate2, Cert_Profile=sinCACert, pseudonym=tes, Script_Name=InternalEnrollCA, Serial_Num=12345.0, TC_ID=t003, Expected_Result=NA, House_identifier=test, Street=Bng, Pwd=emudhra@1, Order=1, Key_Profile=sindhuHSMab, Tel_Num=9.87654321E9, SearchForMsg=NA, Organisation=emudhra, Authentic_tPswrd=emudhra@2, Org_unit=Bnglre, Title=Engineer, 2.4.5=test, SearchByMsg=NA, Select_Type=Internal, Authentic_email=sindhuofficer2@gmail.com, State=karnataka, Country=India, KeyAlgo_size=RSA-1024, Unique_Identifier=fjdsk, Actual Result=null, Postl_Code=567447, Sign_algo=NA}</td>
+<td></td>
+<td>42</td>
+<td>Scripts.OfcrCACertEnrollCA_Script@51b279c9</td></tr>
+<tr>
+<td title='Scripts.OfcrCACertEnrollCA_Script.caEnrollCACert()'><b>caEnrollCACert</b><br>Test class: Scripts.OfcrCACertEnrollCA_Script<br>Parameters: {Execute_Flag=Y, Uname=sindhuadmin@gmail.com, Common_Name=skRootCert, Cert_Profile=NA, pseudonym=NA, Script_Name=SearchCACert, Serial_Num=NA, TC_ID=t004, Expected_Result=NA, House_identifier=NA, Street=NA, Pwd=emudhra@1, Order=1, Key_Profile=NA, Tel_Num=NA, SearchForMsg=Please enter common name, Organisation=NA, Authentic_tPswrd=NA, Org_unit=NA, Title=NA, 2.4.5=NA, SearchByMsg=Please choose search by field, Select_Type=NA, Authentic_email=NA, State=NA, Country=NA, KeyAlgo_size=NA, Unique_Identifier=NA, Actual Result=null, Postl_Code=NA, Sign_algo=NA}</td>
+<td></td>
+<td>0</td>
+<td>Scripts.OfcrCACertEnrollCA_Script@51b279c9</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false" thread-count="1">
+	<parameter name="browser" value="ch"></parameter>
+
+	<test name="caAdminProfile">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginCaAdministrator_Script" />
+			<class name="Scripts.CaAdministratorProfile_Script" />
+		</classes>
+	</test>
+
+	<test name="createAdmin">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginCAAdmin_Script" />
+			<class name="Scripts.CreateAdmin_Script" />
+		</classes>
+	</test>
+
+	<test name="Login">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.Logout_Script" />
+		</classes>
+	</test>
+
+	<test name="AdminProfile">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.AdminProfile_Script" />
+		</classes>
+	</test>
+
+	<test name="createUser">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.CreateUser_Script" />
+		</classes>
+	</test>
+
+	<test name="UserNGroup">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.UserNGroup_Script" />
+		</classes>
+	</test>
+
+
+	<test name="AdminCertProfile">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.AdmnCertifctPrfle_Script" />
+		</classes>
+	</test>
+
+	<test name="AdminKeyProfile">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.AdmnKeyPrfle_Script" />
+		</classes>
+	</test>
+
+	<test name="OfficerProfile">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginOfficer_Script" />
+			<class name="Scripts.AdminProfile_Script" />
+		</classes>
+	</test>
+
+	<test name="OfficerLogin">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginOfficer_Script" />
+			<class name="Scripts.OfcrCACertEnroll_Script" />
+		</classes>
+	</test>
+
+	<test name="CertProfileCA">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.AdmnCertifctPrfleCA_Script" />
+		</classes>
+	</test>
+
+	<test name="CertCA">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginOfficer_Script" />
+			<class name="Scripts.OfcrCACertEnrollCA_Script" />
+		</classes>
+	</test>
+
+	<test name="CertProfileUser">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.AdmnCertifctPrfleUser_Script" />
+		</classes>
+	</test>
+
+	<test name="CertUser">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginOfficer_Script" />
+			<class name="Scripts.OfcrUserCertEnroll_Script" />
+		</classes>
+	</test>
+
+	<test name="CertProfileOCSP">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.AdmnCertifctPrfleOCSP_Script" />
+		</classes>
+	</test>
+
+	<test name="ManageOSCP">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginOfficer_Script" />
+			<class name="Scripts.OfcrOCSPMangnt_Script" />
+		</classes>
+	</test>
+	<test name="caCertSearch">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.AdmnCACertMngnt_Script" />
+		</classes>
+	</test>
+
+	<test name="userCertSearch">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.AdmnUserCertMngnt_Script" />
+		</classes>
+	</test>
+
+	<test name="admnReport">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.Login_Script" />
+			<class name="Scripts.AdmnReports_Script" />
+		</classes>
+	</test>
+
+	<test name="keyRecovery">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginOfficer_Script" />
+			<class name="Scripts.OfcrKeyRecovery_Script" />
+		</classes>
+	</test>
+
+	<test name="CRLmanage">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginOfficer_Script" />
+			<class name="Scripts.OfcrManageCRL_Script" />
+		</classes>
+	</test>
+	<test name="LoginOutAuditor">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginAuditor_Script" />
+			<class name="Scripts.AuditorProfile_Script" />
+			<class name="Scripts.Logout_Script" />
+		</classes>
+	</test>
+
+	<test name="AuditorReports">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginAuditor_Script" />
+			<class name="Scripts.AuditorReports_Script" />
+		</classes>
+	</test>
+
+	<test name="CAAdminReportsLogs">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginCaAdministrator_Script" />
+			<class name="Scripts.CAAdminReports_Script" />
+		</classes>
+	</test>
+
+	<test name="OperatorLoginOut">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginOperator_Script" />
+			<class name="Scripts.OperatorProfile_Script" />
+			<class name="Scripts.Logout_Script" />
+
+		</classes>
+	</test>
+
+	<test name="OperatorBackup">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginOperator_Script" />
+			<class name="Scripts.OperatorBackup_Script" />
+
+		</classes>
+	</test>
+
+	<test name="OperatorBackupRemote">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginOperator_Script" />
+			<class name="Scripts.OperatorBckupRemote_Script" />
+
+		</classes>
+	</test>
+
+	<test name="caadminDashboard">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginCAAdmin_Script" />
+			<class name="Scripts.CAAdminDashBoard_Script" />
+
+		</classes>
+	</test>
+	<test name="OfficerDashboard">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginOfficer_Script" />
+			<class name="Scripts.OfficrDashBoard_Script" />
+
+		</classes>
+	</test>
+	<test name="AuditorDashboard">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+
+			<class name="Scripts.LoginAuditor_Script" />
+			<class name="Scripts.AuditorDashBoard_Script" />
+
+		</classes>
+	</test>
+
+	<test name="OperatorDashboard">
+		<groups>
+			<run>
+				<include name="SMK" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Scripts.LoginOperator_Script" />
+			<class name="Scripts.OperatorDashBoard_Script" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
